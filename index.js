@@ -30,13 +30,13 @@ function nextQuestion() {
 // load the necessary question info and assets from the STORE array
 function loadQuestions() {
   $('.container').html(`
-    <section id="quizQuestions" role="region">
+    <section id="quizQuestions" role="application">
     <img src="${STORE[questionCount].relatedPhoto}" alt="${STORE[questionCount].alt}" />
     <ul>
       <li class="question">Question ${questionCount +1} of 10</li>
       <li class="score">Score ${scoreCount} of 10</li>
     </ul>    
-    <h2>${STORE[questionCount].question}</h2>
+    <h1>${STORE[questionCount].question}</h1>
     <form id="js-quizQuestionForm" role="form">
       <fieldset class="fieldset">
   `);  
