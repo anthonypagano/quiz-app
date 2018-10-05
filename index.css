@@ -70,6 +70,10 @@ fieldset {
   padding-top: 10px;
 }
 
+legend {
+    display: none;
+}
+
 input {
   margin: 15px 0;
 }
