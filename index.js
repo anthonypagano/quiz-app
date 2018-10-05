@@ -39,6 +39,7 @@ function loadQuestions() {
     <h1>${STORE[questionCount].question}</h1>
     <form id="js-quizQuestionForm" role="form">
       <fieldset class="fieldset">
+      <legend>Questions and answer options</legend>
   `);  
   
   const countTo = 3;
@@ -74,20 +75,20 @@ function checkTheAnswer() {
 function showAnswerPannel(answer, correctAnswer) {
   let correctAnswerPhrase = `${STORE[questionCount].rightAnswerPhrase}` + `${STORE[questionCount].theRightAnswer}`;
   $('.container').html(`
-      <section role="region">
+      <section role="application">
   `);  
 
   if (answer === correctAnswer) {
     scoreCounter();
     $('.container').append(`
         <img src="https://s3.amazonaws.com/speedsport-news/speedsport-news/wp-content/uploads/2018/04/09082815/80-SteveTorrence-Celeb-LasVegas1-1068x799.jpg" alt="Steve Torrence wins the top fuel class at the 4 Wide Nationals in Las Vegas" />
-          <p>You Are Correct!</p>
+          <h1 class='answer'>You Are Correct!</h1>
           <p>${correctAnswerPhrase}.</p>
     `);    
   } else {
     $('.container').append(`
       <img src="https://media.giphy.com/media/HiqKxcqQn5OF2/giphy.gif" alt="Ron Capps' engine explodes" />
-        <p>You chose ${answer}.</p>
+        <h1 class='answer'>You chose ${answer}.</h1>
         <p>I'm sorry, your answer is incorrect.</p>
         <p>The correct answer is ${STORE[questionCount].theRightAnswer}.</p>
     `);    
@@ -119,9 +120,9 @@ function continueToNextQuestion() {
 // when the user gets to the end of the quiz show them their score and button to re-start the quiz.
 function showEndOfQuizPannel() {
 $('.container').html(`
-    <section role="region">
+    <section role="application">
       <img src="https://www.racingjunk.com/news/wp-content/uploads/2013/12/John-Force-Racing-Museum-003.jpg?w=222&h=166&crop=1" alt="Just a few of the Wally Trophies at the John Force Racing Museum" />
-        <p>You made it to the Winners Circle!</p>
+        <h1 class='answer'>You made it to the Winners Circle!</h1>
         <p>Out of the ${questionCount} questions, you got ${scoreCount} right. Click the button below to try the quiz again and improve your score!</p>
         <button id="tryAgain">Try Again</button>  
     </section>

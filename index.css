@@ -44,7 +44,7 @@ h1, h2 {
   padding-top: 25px;
 }
 
-p {
+p, .answer {
   padding: 10px 0;
 }
 
