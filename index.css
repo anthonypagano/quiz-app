@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color: white;
+  background: #ad5389;
+  background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+  background: linear-gradient(to right, #3c1053, #ad5389);
+}
+
+button {
+    background-color: green;
+    border: 0px;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 30px auto 20px auto; 
+    padding: 20px;
+    display: block;
+}
+
+header, main {
+  display: block;
+}
+
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 5px;
+}
+
+h1, h2 {
+  font-size: 20px;
+  font-weight: normal;
+  clear: left;
+  padding-top: 25px;
+}
+
+p {
+  padding: 10px 0;
+}
+
+img {
+  width: 300px;
+  border-radius: 5px;
+  margin: 25px auto;
+}
+
+form {
+  margin: 0 auto;
+  width: 310px;
+}
+
+section {
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  text-align: left;
+  padding-top: 10px;
+}
+
+input {
+  margin: 15px 0;
+}
+
+ul {
+  width: 300px;
+  list-style: none;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+li {
+  width: 50%;
+  float: left;
+}
+
+.question {
+  text-align: left;
+}
+
+.score {
+  text-align: right;
+}  
+
+@media only screen and (min-width: 640px) {
+  h1, h2, p {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
