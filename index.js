@@ -39,6 +39,7 @@ function loadQuestions() {
     <h1>${STORE[questionCount].question}</h1>
     <form id="js-quizQuestionForm" role="form">
       <fieldset class="fieldset">
+      <legend>Questions and answer options</legend>
   `);  
   
   const countTo = 3;
@@ -74,7 +75,7 @@ function checkTheAnswer() {
 function showAnswerPannel(answer, correctAnswer) {
   let correctAnswerPhrase = `${STORE[questionCount].rightAnswerPhrase}` + `${STORE[questionCount].theRightAnswer}`;
   $('.container').html(`
-      <section role="region">
+      <section role="application">
   `);  
 
   if (answer === correctAnswer) {
@@ -119,7 +120,7 @@ function continueToNextQuestion() {
 // when the user gets to the end of the quiz show them their score and button to re-start the quiz.
 function showEndOfQuizPannel() {
 $('.container').html(`
-    <section role="region">
+    <section role="application">
       <img src="https://www.racingjunk.com/news/wp-content/uploads/2013/12/John-Force-Racing-Museum-003.jpg?w=222&h=166&crop=1" alt="Just a few of the Wally Trophies at the John Force Racing Museum" />
         <p>You made it to the Winners Circle!</p>
         <p>Out of the ${questionCount} questions, you got ${scoreCount} right. Click the button below to try the quiz again and improve your score!</p>
