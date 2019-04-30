@@ -112,7 +112,7 @@ const STORE = [
         'three'
       ],
       theRightAnswer: 'one',
-      rightAnswerPhrase: 'As of the start of the 2019 season only Brittany is the only ',
+      rightAnswerPhrase: 'As of the start of the 2019 season Brittany is the only ',
       relatedPhoto: 'images/John-Laurie-Courtney-Ashley-Brittany.jpg',
       alt: 'The Force Family. John, Laurie, Courtney, Ashley and Brittany.'
     },
