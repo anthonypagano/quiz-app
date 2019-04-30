@@ -9,7 +9,7 @@ const STORE = [
       ],
       theRightAnswer: 'National Hot Rod Association',
       rightAnswerPhrase: 'NHRA stands for ',
-      relatedPhoto: 'https://cdn.shopify.com/s/files/1/1706/5673/t/10/assets/nhra-logo.png?5095942340538535732',
+      relatedPhoto: 'images/nhra-logo.png',
       alt: 'NHRA Logo'
     },
     {
@@ -22,7 +22,7 @@ const STORE = [
       ],
       theRightAnswer: '1951',
       rightAnswerPhrase: 'The NHRA was established in ',
-      relatedPhoto: 'https://bloximages.newyork1.vip.townnews.com/bakersfield.com/content/tncms/assets/v3/editorial/5/85/585f630a-b43d-11e7-aefc-d7914dd05b1d/59e7b03033893.image.jpg?resize=1200%2C945',
+      relatedPhoto: 'images/59e7b03033893.image.jpg',
       alt: 'Rick Stewart in his front engine mounted dragster'
     },
     {
@@ -35,7 +35,7 @@ const STORE = [
       ],
       theRightAnswer: 'Wally Parks',
       rightAnswerPhrase: 'The founder of the NHRA is ',
-      relatedPhoto: 'https://www.getmoresports.com/wp-content/uploads/2016/08/page12_blog_entry23_summary_1.jpg',
+      relatedPhoto: 'images/page12_blog_entry23_summary_1.jpg',
       alt: 'Artists rendering of NHRA Founder Wally Parks'
     },
     {
@@ -48,7 +48,7 @@ const STORE = [
       ],
       theRightAnswer: 'the christmas tree',
       rightAnswerPhrase: 'The marker that starts the race is known as ',
-      relatedPhoto: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiQpPBGbdDhCdnyKlMYkoqxUZ7nc17_AM3BDrX-8_Toy8Xpxxlqw',
+      relatedPhoto: 'images/nhra-christmas-tree.jpg',
       alt: 'NHRA Christmas Tree'
     },
     {
@@ -61,7 +61,7 @@ const STORE = [
       ],
       theRightAnswer: 'a wally',
       rightAnswerPhrase: 'The trophy is known as ',
-      relatedPhoto: 'https://motorracingpress.com/wp-content/uploads/2017/05/rcnhra25717.jpg',
+      relatedPhoto: 'images/rcnhra25717.jpg',
       alt: 'The Wally trophy.'
     },
     {
@@ -74,7 +74,7 @@ const STORE = [
       ],
       theRightAnswer: 'Don Garlits',
       rightAnswerPhrase: '',
-      relatedPhoto: 'http://www.roadkill.com/wp-content/uploads/2016/07/don-garlits-swamp-rat-13-rebuilt-17.jpg',
+      relatedPhoto: 'images/don-garlits-swamp-rat-13-rebuilt-17.jpg',
       alt: 'Don Garlits crash in 1970.'
     },
     {
@@ -87,7 +87,7 @@ const STORE = [
       ],
       theRightAnswer: 'Don Prudhomme & Tom McEwen',
       rightAnswerPhrase: '"The Snake & The Mongoose" are ',
-      relatedPhoto: 'http://www.route66raceway.com/~/media/91A257B3D4ED45CDA4FF5946BCCD666C.ashx?w=325',
+      relatedPhoto: 'images/snake-mongoose.jpg',
       alt: 'The Snake & The Mongoose'
     },
     {
@@ -100,20 +100,20 @@ const STORE = [
       ],
       theRightAnswer: 'Shirley Muldowney',
       rightAnswerPhrase: 'The "First Lady of Drag Racing" is ',
-      relatedPhoto: 'https://motorlands.net/wp-content/uploads/2017/02/Shirley-Muldowney1-799x4451.jpg',
+      relatedPhoto: 'images/Shirley-Muldowney1-799x4451.jpg',
       alt: 'The First Lady of Drag Racing in front of her funny car.'
     },
     {
       question: 'The Force family is often known as the "First Family of Drag Racing". How many of John\'s daughters are actively competing on the NHRA circuit?',
       answerOptions: [
+        'none',
         'one',
         'two',
-        'three',
-        'none'
+        'three'
       ],
-      theRightAnswer: 'two',
-      rightAnswerPhrase: 'Courtney and Brittany are the only active ',
-      relatedPhoto: 'https://parade.com/wp-content/uploads/2016/06/John-Laurie-Courtney-Ashley-Brittany.jpg',
+      theRightAnswer: 'one',
+      rightAnswerPhrase: 'As of the start of the 2019 season only Brittany is the only ',
+      relatedPhoto: 'images/John-Laurie-Courtney-Ashley-Brittany.jpg',
       alt: 'The Force Family. John, Laurie, Courtney, Ashley and Brittany.'
     },
     {
@@ -126,7 +126,7 @@ const STORE = [
       ],
       theRightAnswer: 'nitromethane',
       rightAnswerPhrase: 'Currently the fuel used and approved by the NHRA is ',
-      relatedPhoto: 'https://moparinsiders.com/wp-content/uploads/2018/07/PritchettMileHighQual-780x405.jpg',
+      relatedPhoto: 'images/PritchettMileHighQual-780x405.jpg',
       alt: 'Leah Pritchett lights it up at night during a qualifying session.'
     }
 

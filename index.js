@@ -81,13 +81,13 @@ function showAnswerPannel(answer, correctAnswer) {
   if (answer === correctAnswer) {
     scoreCounter();
     $('.container').append(`
-        <img src="https://s3.amazonaws.com/speedsport-news/speedsport-news/wp-content/uploads/2018/04/09082815/80-SteveTorrence-Celeb-LasVegas1-1068x799.jpg" alt="Steve Torrence wins the top fuel class at the 4 Wide Nationals in Las Vegas" />
+        <img src="images/80-SteveTorrence-Celeb-LasVegas1-1068x799.jpg" alt="Steve Torrence wins the top fuel class at the 4 Wide Nationals in Las Vegas" />
           <h1 class='answer'>You Are Correct!</h1>
           <p>${correctAnswerPhrase}.</p>
     `);    
   } else {
     $('.container').append(`
-      <img src="https://media.giphy.com/media/HiqKxcqQn5OF2/giphy.gif" alt="Ron Capps' engine explodes" />
+      <img src="images/top-fuel-engine-explosion.jpg" alt="Top fuel engine explosion" />
         <h1 class='answer'>You chose ${answer}.</h1>
         <p>I'm sorry, your answer is incorrect.</p>
         <p>The correct answer is ${STORE[questionCount].theRightAnswer}.</p>
@@ -121,7 +121,7 @@ function continueToNextQuestion() {
 function showEndOfQuizPannel() {
 $('.container').html(`
     <section role="application">
-      <img src="https://www.racingjunk.com/news/wp-content/uploads/2013/12/John-Force-Racing-Museum-003.jpg?w=222&h=166&crop=1" alt="Just a few of the Wally Trophies at the John Force Racing Museum" />
+      <img src="images/John-Force-Racing-Museum-003.jpg" alt="Just a few of the Wally Trophies at the John Force Racing Museum" />
         <h1 class='answer'>You made it to the Winners Circle!</h1>
         <p>Out of the ${questionCount} questions, you got ${scoreCount} right. Click the button below to try the quiz again and improve your score!</p>
         <button id="tryAgain">Try Again</button>  
@@ -132,7 +132,10 @@ $('.container').html(`
 //upon clicking the Try Again button reload the page to bring the users back to the beginning and clear the question and score counters
 function tryTheQuizAgain() {
   $('.container').on('click', '#tryAgain', function(event) {
-    window.location.reload();
+    questionCount = 0;
+    scoreCount = 0;
+    quizEngine();
+    nextQuestion();
   });
 }
 
